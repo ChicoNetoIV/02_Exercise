@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title>Dr. Francisco Pereira</title>
+    <style>
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        
+        .background-image {
+            width: 100%;
+            height: 100%;
+            background-image: url(media/Background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .justified-text {
+             text-align: justify;
+        }
+        .center-image {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+    </div>
+    <div class="wrapper">
+        <div class="menu">
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+            <p style="font-size: 13px"><a href="index.html">Início</a></p>
+            <p style="font-size: 13px"><a href="sobre.html">Sobre</a></p>
+            <p style="font-size: 13px"><a href="horario.html">Horário de atendimento</a></p>
+            <p style="font-size: 13px"><a href="contato.html">Contato</a></p>
+        </div>
+
+        <div class="main">
+            <div class="header">
+            <center><img src="media/Logo.png" width="160"></center>
+                
+            </div>
+    
+            <div class="content">
+                <h3>Contato</h3>    
+                <hr>
+                <p>Entre em contato conosco através do número (81) 9999-8764 (WhatsAPP) ou através do formulário abaixo: </p>
+                <br>    
+                <form method="post">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                            <label>Nome: </label><input type="text" /><br>
+                            <label>Telefone: </label><input type="number" /><br>
+                            <label>E-mail: </label><input type="email" /><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Informações Técnicas</legend>
+                            <label for="servicos">Escolha um serviço:</label>
+                                <select id="servicos" name="servicos">
+                                    <option value="s1">Avaliação e Diagnóstico Especializado</option>
+                                    <option value="s2">Tratamento Multimodal Personalizado</option>
+                                    <option value="s3">Terapia Cognitivo-Comportamental (TCC)</option>
+                                    <option value="s4">Programas de Habilidades Sociais e Funcionais</option>
+                                </select><br><br>
+                            <label>Gostaria de Realizar um Agendamento?</label>
+                                <input type="radio" name="agendamentosim" value="asim"> Sim
+                                <input type="radio" name="agendamentosim" value="anao"> Não<br><br>
+                            <label>A dúvida é sobre preços?</label>
+                                <input type="radio" name="precosim" value="psim"> Sim
+                                <input type="radio" name="precosim" value="pnao"> Não<br><br>
+                            <label>Caso deseje agendar, quais são os dias da semana que você possui interesse?</label><br><br>
+                                <input type="checkbox">Segunda-Feira<br>
+                                <input type="checkbox">Terça-Feira<br>
+                                <input type="checkbox">Quarta-Feira<br>
+                                <input type="checkbox">Quinta-Feira<br>
+                                <input type="checkbox">Sexta-Feira<br>
+                                <input type="checkbox">Sábado<br>
+                                <input type="checkbox">Domingo
+
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                            <Label>Assunto: </Label><input type=text" /><br>
+                            <Label>Mensagem: </Label><textarea></textarea>
+                        </fieldset><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+
+               
+                <br>
+                <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.027295601858!2d-34.834535390341095!3d-7.122834269821695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd33b53b3531%3A0x30f5a9f1d7301384!2sR.%20das%20Ac%C3%A1cias%2C%20629%20-%20Miramar%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058043-250!5e0!3m2!1sen!2sbr!4v1692457787750!5m2!1sen!2sbr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </center></div>
+    
+            <div class="footer">
+                <center>
+                    <p>Rua das Acácias, 629, João Pessoa/PB |  Fone: (81) 9999-8764  |   Email: contato@drfrancisco.com.br</p>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
